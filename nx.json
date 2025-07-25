@@ -6,10 +6,7 @@
       "inputs": ["production", "^production"],
       "cache": true
     },
-    "e2e": {
-      "inputs": ["default", "^production"],
-      "cache": true
-    },
+    "e2e": { "inputs": ["default", "^production"], "cache": true },
     "build-storybook": {
       "inputs": [
         "default",
@@ -31,15 +28,8 @@
     "@nx/jest:jest": {
       "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"],
       "cache": true,
-      "options": {
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
-      }
+      "options": { "passWithNoTests": true },
+      "configurations": { "ci": { "ci": true, "codeCoverage": true } }
     }
   },
   "namedInputs": {
@@ -68,18 +58,11 @@
         "bundler": "webpack",
         "babel": true
       },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint"
-      }
+      "component": { "style": "css" },
+      "library": { "style": "css", "linter": "eslint" }
     }
   },
   "useInferencePlugins": false,
-  "nxCloudId": "688312d00e4a9139ff8897b9",
-  "tui": {
-    "enabled": true
-  }
+  "nxCloudId": "68831a2cc2d20ab2a7eea2c6",
+  "tui": { "enabled": true }
 }
